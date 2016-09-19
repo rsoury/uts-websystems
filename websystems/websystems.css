@@ -1,0 +1,41 @@
+body{
+  font-family: Tahoma, sans-serif;
+  font-size: 14px;
+  color: rgb(30, 30, 30);
+  margin: 0;
+  padding: 0;
+}
+table, tbody, tr, td{
+  display: block;
+  text-align: center;
+}
+.side-image{
+  position: fixed;
+  left: 0;
+  top:0;
+  bottom: 0;
+  width: 600px;
+}
+
+.main-content-table{
+  padding: 20px;
+}
+
+td.center-table-cell{
+  text-align: center;
+}
+
+img.funny-border-image{
+  border: 6px dashed #8c6eff;
+}
+
+div.large-image-wrapper{
+  position: relative;
+  text-align: center;
+  background-color: #fff;
+
+}
+
+#introPicture{
+
+}
