@@ -44,7 +44,7 @@
 
           <table class="grey-border-bottom" width="100%" cellpadding="0" cellspacing="0">
             <tr>
-              <td width="50%" class="border-right-cell">
+              <td class="border-right-cell half-cell">
                 <div class="text-container">
                   <h2>
                     Structure
@@ -53,8 +53,7 @@
                     <p>
                       The website is structured primarily with tables and table cells, similarly to the way Marketing Emails are structured today because of the requirement
                       to use HTML4 and CSS2 which do not have any sort of responsive grid based functionality like CSS3's Flexbox or @media selectors.
-                      Within each of these cells is our content, usually wrapped in a parent container. For any sort of list, for example a list of anchors,
-                      we used the unordered list and its list items elements to ensure that the structure and understanding of the list is clear in the HTML markup.
+                      Within each of these cells is our content, usually wrapped in a parent container.
                     </p>
                     <pre class="code-block">
                       <<span>table class="grey-border-bottom" width="100%" cellpadding="0" cellspacing="0"</span>><br>
@@ -68,14 +67,41 @@
                         &nbsp;<<span>/tr</span>><br>
                         <br>
                         &nbsp;<<span>tr</span>><br>
-                          &nbsp;&nbsp;<<span>td width="50%" class="border-right-cell"</span>><br>
+                          &nbsp;&nbsp;<<span>td class="border-right-cell half-cell"</span>><br>
                             &nbsp;&nbsp;&nbsp;<<span>!-- First Cell in Second Row --</span>><br>
                           &nbsp;&nbsp;<<span>/td</span>><br>
-                          &nbsp;&nbsp;<<span>td width="50%"</span>><br>
+                          &nbsp;&nbsp;<<span>td class="half-cell"</span>><br>
                             &nbsp;&nbsp;&nbsp;<<span>!-- Second Cell in Second Row --</span>><br>
                           &nbsp;&nbsp;<<span>/td</span>><br>
                         &nbsp;<<span>/tr</span>><br>
                       <<span>/table</span>><br>
+                    </pre>
+                    <br>
+                    <p>
+                      For any sort of list, for example a list of anchors, we used the unordered list and its list items elements
+                      to ensure that the structure and understanding of the list is clear in the HTML markup.
+                    </p>
+                    <pre class="code-block">
+                      <<span>ul class="main-page-navigator small-nav"</span>><br>
+                        &nbsp;<<span>li</span>><br>
+                          &nbsp;&nbsp;<<span>a href="websystems.css"</span>>CSS Source<<span>/a</span>><br>
+                        &nbsp;<<span>/li</span>><br>
+                        &nbsp;<<span>li</span>><br>
+                          &nbsp;&nbsp;<<span>a href="assets/images/me.jpeg"</span>>My Head<<span>/a</span>><br>
+                        &nbsp;<<span>/li</span>><br>
+                        &nbsp;<<span>li</span>><br>
+                          &nbsp;&nbsp;<<span>a href="assets/images/favicon.ico"</span>>Favicon<<span>/a</span>><br>
+                        &nbsp;<<span>/li</span>><br>
+                        &nbsp;<<span>li</span>><br>
+                          &nbsp;&nbsp;<<span>a href="assets/images/home.svg"</span>>Home Icon<<span>/a</span>><br>
+                        &nbsp;<<span>/li</span>><br>
+                        &nbsp;<<span>li</span>><br>
+                          &nbsp;&nbsp;<<span>a href="assets/images/valid-html401-blue.png"</span>>W3C HTML4<<span>/a</span>><br>
+                        &nbsp;<<span>/li</span>><br>
+                        &nbsp;<<span>li</span>><br>
+                          &nbsp;&nbsp;<<span>a href="assets/images/valid-css2-blue.png"</span>>W3C CSS2<<span>/a</span>><br>
+                        &nbsp;<<span>/li</span>><br>
+                      <<span>/ul</span>><br>
                     </pre>
                     <br>
                     <p>
@@ -162,12 +188,13 @@
                     </p>
                     <p>
                       Correct placement of each element ensures that there are not any elements that are hiding behind the other, and that all elements
-                      which serve a purpose to the user, are accessable visually and interactively.
+                      which serve a purpose to the user, are accessable visually and interactively. If a user is visually impaired and is unable to clearly
+                      understand the functionality of an element, then that demonstrates poor accessability and that is, I believe, what I have prevented.
                     </p>
                   </div>
                 </div>
               </td>
-              <td width="50%" class="image-cell-comments image-cell"></td>
+              <td class="image-cell-comments image-cell half-cell"></td>
             </tr>
           </table>
         </td>

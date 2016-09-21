@@ -121,6 +121,9 @@ div.large-image-wrapper{
   background-position: center;
   background-repeat: no-repeat;
 }
+.half-cell{
+  width: 50%;
+}
 .image-cell-now{
   background-image: url(assets/photos/journey.jpeg); /* Downloaded from: https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?dpr=2&auto=compress,format&crop=entropy&fit=crop&w=200&q=80&cs=tinysrgb */
 }
