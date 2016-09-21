@@ -1,9 +1,190 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
   <head>
-
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ryan Soury">
+    <meta name="description" content="This is Ryan Soury's submission for the Web Systems Website Assignment">
+    <title>Welcome to Ryan Soury's Web Systems Site!</title>
+    <link rel="stylesheet" type="text/css" href="websystems.css">
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon"><!-- Downloaded from: https://www.emojibase.com/emoji/2764/heavyblackheart -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico"><!-- Downloaded from: https://www.emojibase.com/emoji/2764/heavyblackheart - Converted With: http://convertico.com/ -->
   </head>
   <body>
+    <table class="main-content-table" width="100%" cellpadding="0" cellspacing="0">
+      <tr>
+        <td>
+          <table class="grey-border-bottom" width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+              <td class="border-bottom-cell">
+                <h1 class="header-title">Developer Comments</h1>
+              </td>
+              <td class="border-bottom-cell">
+                <ul class="main-page-navigator">
+                  <li>
+                    <a class="main-nav-anchor home-nav" href="../">
+                      <img src="assets/images/home.svg" class="home-img" alt="Back to home" title="Back to home" width="30" ><!-- Downloaded from: http://www.flaticon.com/free-icon/home_149412#term=home&page=1&position=1 -->
+                    </a>
+                  </li>
+                  <li>
+                    <a class="main-nav-anchor" href="index">About Me</a>
+                  </li>
+                  <li>
+                    <a class="main-nav-anchor" href="past">Past Experience</a>
+                  </li>
+                  <li>
+                    <a class="main-nav-anchor" href="future">Future Ventures</a>
+                  </li>
+                </ul>
+              </td>
+            </tr>
 
+            <tr>
+              <td width="50%">
+                <div class="text-container">
+                  <h2>
+                    Structure
+                  </h2>
+                  <div class="paragraphs-container">
+                    <p>
+                      The website is structured primarily with tables and table cells, similarly to the way Marketing Emails are structured today because of the requirement
+                      to use HTML4 and CSS2 which do not have any sort of responsive grid based functionality like CSS3's Flexbox or @media selectors.
+                      Within each of these cells is our content, usually wrapped in a parent container. For any sort of list, for example a list of anchors,
+                      we used the unordered list and its list items elements to ensure that the structure and understanding of the list is clear in the HTML markup.
+                    </p>
+                    <pre class="code-block">
+                      <table class="grey-border-bottom" width="100%" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td class="border-bottom-cell">
+                            <!-- First Cell in First Row -->
+                          </td>
+                          <td class="border-bottom-cell">
+                            <!-- Second Cell in First Row -->
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td width="50%" class="border-right-cell">
+                            <!-- First Cell in Second Row -->
+                          </td>
+                          <td width="50%">
+                            <!-- Second Cell in Second Row -->
+                          </td>
+                        </tr>
+                      </table>
+                    </pre>
+                    <br>
+                    <p>
+                      The only id I used was for the main image which is the only image of its kind.
+                      Ids are good to specifically identify an element throughout the whole website.
+                      In CSS3, Ids are also good to behave as starting points in long CSS Selectors.
+                    </p>
+                    <pre class="code-block">
+                      <img
+                        id="introPicture"
+                        src="websystems/assets/images/me.jpeg"
+                        title="I can see you've hover on my face long enough :)"
+                        alt="I'm Ryan Soury! Checkout my github..."
+                        width="400"
+                        height="400">
+                    </pre>
+                    <pre class="code-block">
+                      #introPicture{
+                        border: 6px dashed #8c6eff;
+                      }
+                    </pre>
+                    <br>
+                    <p>
+                      I used many classes for even the smallest CSS styles, however there are primary classes that were used many times in one webpage which
+                      is essentially what classes are for. Classes are reusable labels representing a set of styles. When applied to an element, the element
+                      inherit the styles defined in the CSS class.
+                    </p>
+                    <p>
+                      Class names are meant to be self explanatory. In the example below, it is clear that .main-nav-anchor is a class abbreviation for
+                      "Main Navigation Anchor" which is correct described as it defines the styling for the main navigation anchor elements on the web page.
+                      As already described, the reason why they're classes ".main-nav-anchor" and not ids "#main-nav-anchor" is because classes are more for
+                      style reusability and because multiple elements with the same id contradicts the purpose of an identification attribute.
+                    </p>
+                    <pre class="code-block">
+                      .main-nav-anchor{
+                        text-decoration: none;
+                        color: #8c6eff;
+                        border: 1px solid #8c6eff;
+                        display: inline-block;
+                        font-size: 18px;
+                        width: 200px;
+                        height: 40px;
+                        line-height: 2;
+                      }
+                      .border-bottom-cell{
+                        border-bottom: 5px solid rgb(240, 240, 240);
+                      }
+                      .border-right-cell{
+                        border-right: 1px solid rgb(220, 220, 220);
+                      }
+                      .home-nav{
+                        width: 40px;
+                        vertical-align: middle;
+                      }
+                      .home-img{
+                        margin: 5px 0;
+                      }
+                    </pre>
+                  </div>
+                  <h2>Aesthetics</h2>
+                  <div class="paragraphs-container">
+                    
+                  </div>
+                </div>
+              </td>
+              <td width="50%">
+                <div class="fill-cell">
+
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="center-table-cell yellow-table-cell">
+          <h4>You can even checkout my resources.</h4>
+          <ul class="main-page-navigator small-nav">
+            <li>
+              <a href="websystems.css">CSS Source</a>
+            </li>
+            <li>
+              <a href="assets/images/me.jpeg">My Head</a>
+            </li>
+            <li>
+              <a href="assets/images/favicon.ico">Favicon</a>
+            </li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="footer-table-row footer-table-cell">
+          <h4>Validation</h4>
+          <ul>
+            <li>
+              <a href="http://validator.w3.org/check?uri=referer">
+                <img src="assets/images/valid-html401-blue.png" alt="HTML4 W3C Validator" title="HTML4 W3C Validator"> <!-- Downloaded from: https://www.w3.org/QA/Tools/Icons -->
+              </a>
+            </li>
+            <li>
+              <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img src="assets/images/valid-css2-blue.png" alt="CSS2 W3C Validator" title="CSS2 W3C Validator"> <!-- Downloaded from: https://www.w3.org/QA/Tools/Icons -->
+              </a>
+            </li>
+          </ul>
+          <div>
+            <span>Ryan Soury &copy; 2016</span>
+          </div>
+        </td>
+      </tr>
+
+    </table>
   </body>
 </html>
