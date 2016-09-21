@@ -13,9 +13,12 @@ ul{
   padding: 0;
 }
 li{
-  display: inline-block;
+  display: inline;
   margin: 0 10px;
   text-align: center;
+}
+pre{
+  white-space: normal;
 }
 .yellow-table-cell{
   background: #FFFFDB;
@@ -25,13 +28,19 @@ li{
   text-decoration: none;
   color: #8c6eff;
   border: 1px solid #8c6eff;
-  display: inline-block;
+  display: block;
   font-size: 18px;
-  width: 200px;
   height: 40px;
   line-height: 2;
+  margin: 0 10px;
 }
-
+.main-page-navigator{
+  padding: 0 20px;
+  text-align: right;
+}
+.small-nav{
+  text-align: center;
+}
 .main-content-table{
   border: 50px solid rgb(240, 240, 240);
 }
@@ -70,6 +79,9 @@ div.large-image-wrapper{
 .home-nav{
   width: 40px;
   vertical-align: middle;
+  background: #8c6eff;
+  color: #fff;
+  margin: 0 auto;
 }
 .home-img{
   margin: 5px 0;
@@ -90,15 +102,34 @@ div.large-image-wrapper{
   border-bottom: 5px solid rgb(240, 240, 240);
 }
 
-.image-cell-1{
-  background: url();
+.code-block{
+  text-align: left;
+  padding: 20px;
+  background-color: rgb(250, 250, 250);
+  border: 1px solid rgb(220, 220, 220);
 }
-.image-cell-2{
-  background: url();
+.super-anchor{
+  background: #8c6eff;
+  color: #fff;
+  width: auto;
+  height: auto;
+  padding:10px 50px;
+  margin: 20px;
 }
-.image-cell-3{
-  background: url();
+.image-cell{
+  background-color: rgb(30, 30, 30);
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.image-cell-4{
-  background: url();
+.image-cell-now{
+  background-image: url(assets/photos/journey.jpeg); /* Downloaded from: https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?dpr=2&auto=compress,format&crop=entropy&fit=crop&w=200&q=80&cs=tinysrgb */
+}
+.image-cell-past{
+  background-image: url(assets/photos/mountain.jpeg); /* Downloaded from: https://images.unsplash.com/photo-1469521669194-babb45599def?dpr=2&auto=compress,format&crop=entropy&fit=crop&w=200&q=80&cs=tinysrgb */
+}
+.image-cell-future{
+  background-image: url(assets/photos/black-white-city.jpg); /* Download from: https://images.unsplash.com/25/black-white-city.jpg?dpr=2&auto=format&crop=entropy&fit=crop&w=200&q=80&cs=tinysrgb */
+}
+.image-cell-comments{
+  background-image: url(assets/photos/code.jpeg); /* Download from: https://images.unsplash.com/photo-1468070454955-c5b6932bd08d?dpr=2&auto=compress,format&crop=entropy&fit=crop&w=200&q=80&cs=tinysrgb */
 }

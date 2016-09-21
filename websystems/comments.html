@@ -20,27 +20,31 @@
                 <h1 class="header-title">Developer Comments</h1>
               </td>
               <td class="border-bottom-cell">
-                <ul class="main-page-navigator">
-                  <li>
-                    <a class="main-nav-anchor home-nav" href="../">
-                      <img src="assets/images/home.svg" class="home-img" alt="Back to home" title="Back to home" width="30" ><!-- Downloaded from: http://www.flaticon.com/free-icon/home_149412#term=home&page=1&position=1 -->
-                    </a>
-                  </li>
-                  <li>
-                    <a class="main-nav-anchor" href="index">About Me</a>
-                  </li>
-                  <li>
-                    <a class="main-nav-anchor" href="past">Past Experience</a>
-                  </li>
-                  <li>
-                    <a class="main-nav-anchor" href="future">Future Ventures</a>
-                  </li>
-                </ul>
+                <table class="main-page-navigator" width="100%" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td>
+                      <a class="main-nav-anchor home-nav" href="../">
+                        <img src="assets/images/home.svg" class="home-img" alt="Back to home" title="Back to home" width="30" ><!-- Downloaded from: http://www.flaticon.com/free-icon/home_149412#term=home&page=1&position=1 -->
+                      </a>
+                    </td>
+                    <td>
+                      <a class="main-nav-anchor" href="index">About Me</a>
+                    </td>
+                    <td>
+                      <a class="main-nav-anchor" href="past">Past Experience</a>
+                    </td>
+                    <td>
+                      <a class="main-nav-anchor" href="future">Future Ventures</a>
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
+          </table>
 
+          <table class="grey-border-bottom" width="100%" cellpadding="0" cellspacing="0">
             <tr>
-              <td width="50%">
+              <td width="50%" class="border-right-cell">
                 <div class="text-container">
                   <h2>
                     Structure
@@ -53,25 +57,25 @@
                       we used the unordered list and its list items elements to ensure that the structure and understanding of the list is clear in the HTML markup.
                     </p>
                     <pre class="code-block">
-                      <table class="grey-border-bottom" width="100%" cellpadding="0" cellspacing="0">
-                        <tr>
-                          <td class="border-bottom-cell">
-                            <!-- First Cell in First Row -->
-                          </td>
-                          <td class="border-bottom-cell">
-                            <!-- Second Cell in First Row -->
-                          </td>
-                        </tr>
-
-                        <tr>
-                          <td width="50%" class="border-right-cell">
-                            <!-- First Cell in Second Row -->
-                          </td>
-                          <td width="50%">
-                            <!-- Second Cell in Second Row -->
-                          </td>
-                        </tr>
-                      </table>
+                      <<span>table class="grey-border-bottom" width="100%" cellpadding="0" cellspacing="0"</span>><br>
+                        &nbsp;<<span>tr</span>><br>
+                          &nbsp;&nbsp;<<span>td class="border-bottom-cell"</span>><br>
+                            &nbsp;&nbsp;&nbsp;<<span>!-- First Cell in First Row --</span>><br>
+                          &nbsp;&nbsp;<<span>/td</span>><br>
+                          &nbsp;&nbsp;<<span>td class="border-bottom-cell"</span>><br>
+                            &nbsp;&nbsp;&nbsp;<<span>!-- Second Cell in First Row --</span>><br>
+                          &nbsp;&nbsp;</<span>td</span>><br>
+                        &nbsp;<<span>/tr</span>><br>
+                        <br>
+                        &nbsp;<<span>tr</span>><br>
+                          &nbsp;&nbsp;<<span>td width="50%" class="border-right-cell"</span>><br>
+                            &nbsp;&nbsp;&nbsp;<<span>!-- First Cell in Second Row --</span>><br>
+                          &nbsp;&nbsp;<<span>/td</span>><br>
+                          &nbsp;&nbsp;<<span>td width="50%"</span>><br>
+                            &nbsp;&nbsp;&nbsp;<<span>!-- Second Cell in Second Row --</span>><br>
+                          &nbsp;&nbsp;<<span>/td</span>><br>
+                        &nbsp;<<span>/tr</span>><br>
+                      <<span>/table</span>><br>
                     </pre>
                     <br>
                     <p>
@@ -80,13 +84,13 @@
                       In CSS3, Ids are also good to behave as starting points in long CSS Selectors.
                     </p>
                     <pre class="code-block">
-                      <img
-                        id="introPicture"
-                        src="websystems/assets/images/me.jpeg"
-                        title="I can see you've hover on my face long enough :)"
-                        alt="I'm Ryan Soury! Checkout my github..."
-                        width="400"
-                        height="400">
+                      <<span>img<br>
+                        &nbsp;&nbsp;id="introPicture"<br>
+                        &nbsp;&nbsp;src="websystems/assets/images/me.jpeg"<br>
+                        &nbsp;&nbsp;title="I can see you've hover on my face long enough :)"<br>
+                        &nbsp;&nbsp;alt="I'm Ryan Soury! Checkout my github..."<br>
+                        &nbsp;&nbsp;width="400"<br>
+                        &nbsp;&nbsp;height="400"</span>>
                     </pre>
                     <pre class="code-block">
                       #introPicture{
@@ -106,42 +110,64 @@
                       style reusability and because multiple elements with the same id contradicts the purpose of an identification attribute.
                     </p>
                     <pre class="code-block">
-                      .main-nav-anchor{
-                        text-decoration: none;
-                        color: #8c6eff;
-                        border: 1px solid #8c6eff;
-                        display: inline-block;
-                        font-size: 18px;
-                        width: 200px;
-                        height: 40px;
-                        line-height: 2;
-                      }
-                      .border-bottom-cell{
-                        border-bottom: 5px solid rgb(240, 240, 240);
-                      }
-                      .border-right-cell{
-                        border-right: 1px solid rgb(220, 220, 220);
-                      }
-                      .home-nav{
-                        width: 40px;
-                        vertical-align: middle;
-                      }
-                      .home-img{
-                        margin: 5px 0;
-                      }
+                      <code>
+                        .main-nav-anchor{<br>
+                          &nbsp;&nbsp;text-decoration: none;<br>
+                          &nbsp;&nbsp;color: #8c6eff;<br>
+                          &nbsp;&nbsp;border: 1px solid #8c6eff;<br>
+                          &nbsp;&nbsp;display: block;<br>
+                          &nbsp;&nbsp;font-size: 18px;<br>
+                          &nbsp;&nbsp;height: 40px;<br>
+                          &nbsp;&nbsp;line-height: 2;<br>
+                          &nbsp;&nbsp;margin: 0 10px;<br>
+                        }<br>
+                        .border-bottom-cell{<br>
+                          &nbsp;&nbsp;border-bottom: 5px solid rgb(240, 240, 240);<br>
+                        }<br>
+                        .border-right-cell{<br>
+                          &nbsp;&nbsp;border-right: 1px solid rgb(220, 220, 220);<br>
+                        }<br>
+                        .home-nav{<br>
+                          &nbsp;&nbsp;width: 40px;<br>
+                          &nbsp;&nbsp;vertical-align: middle;<br>
+                          &nbsp;&nbsp;background: #8c6eff;<br>
+                          &nbsp;&nbsp;color: #fff;<br>
+                          &nbsp;&nbsp;margin: 0 auto;<br>
+                        }<br>
+                        .home-img{<br>
+                          &nbsp;&nbsp;margin: 5px 0;<br>
+                        }<br>
+                      </code>
                     </pre>
                   </div>
                   <h2>Aesthetics</h2>
                   <div class="paragraphs-container">
-                    
+                    <p>
+                      My aim was to strike a very ergonomic, simple and easy-to-understand layout. Each of the subpages carries a very similar layout ensuring
+                      that there is consitency between all the subpages. The header is depicted as it usually is across a multitude of websites in order to keep
+                      a web friendly layout. Title on the left top of the page and the main navigation on the top right.
+                    </p>
+                    <p>
+                      On the contrary, the index page has a layout where everything is centered in order to direct the attention of the reader from top to bottom.
+                      Complementing this concept, the title of the website and main image are aimed to be the first thing new visitors see, and therefore appear
+                      above the navigation items. Centralised navigation is not something new or unergonomic as it depict more a of a splash page, where an understanding
+                      of the general idea behind the website is as important as the navigation around the web page.
+                    </p>
+                  </div>
+                  <h2>Accessibility</h2>
+                  <div class="paragraphs-container">
+                    <p>
+                      Colour was selected to appeal to colour blind individuals. Complementary colours purple and light yellow establishes a significant
+                      distinguishment.
+                    </p>
+                    <p>
+                      Correct placement of each element ensures that there are not any elements that are hiding behind the other, and that all elements
+                      which serve a purpose to the user, are accessable visually and interactively.
+                    </p>
                   </div>
                 </div>
               </td>
-              <td width="50%">
-                <div class="fill-cell">
-
-                </div>
-              </td>
+              <td width="50%" class="image-cell-comments image-cell"></td>
             </tr>
           </table>
         </td>
@@ -159,6 +185,15 @@
             </li>
             <li>
               <a href="assets/images/favicon.ico">Favicon</a>
+            </li>
+            <li>
+              <a href="assets/images/home.svg">Home Icon</a>
+            </li>
+            <li>
+              <a href="assets/images/valid-html401-blue.png">W3C HTML4</a>
+            </li>
+            <li>
+              <a href="assets/images/valid-css2-blue.png">W3C CSS2</a>
             </li>
           </ul>
         </td>
